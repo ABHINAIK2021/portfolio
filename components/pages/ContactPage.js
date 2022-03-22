@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function ContactPage() {
     return (
-        <div className="bg-white mx-auto flex flex-col items-center justify-start min-h-screen py-24 min-w-fit">
+        <div className="bg-white mx-auto flex flex-col items-center justify-center min-h-screen py-24 min-w-fit">
             <div className="md:text-4xl text-2xl text-gray-900 font-bold">Contact Me</div>
             <div className="md:text-2xl text-rose-700 font-bold">get in touch</div>
             <div className="flex md:flex-row flex-col gap-48 items-center justify-between mt-14 sm:overflow-x-hidden">

@@ -13,9 +13,9 @@ export default function Navbar() {
                             {[
                                 ['Home', '/'],
                                 ['About', '/about'],
-                                ['Services', '/services'],
                                 ['Skills', '/skills'],
-                                ['Contact', '/contact']
+                                ['Contact', '/contact'],
+                                ['Services', '/services']
                             ].map(([title, url]) => (
                                 <Link href={url} key={url}>
                                     <a className="px-6 py-3 text-white font-semibold">{title}</a>

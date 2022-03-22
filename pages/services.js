@@ -5,7 +5,7 @@ export default function Services() {
     return (
         <div>
             <Head>
-                <title>Services</title>
+                <title>Services | Abhishek Naik</title>
                 <meta name="description" content="Services" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>

@@ -5,7 +5,7 @@ export default function Contact() {
     return (
         <div>
             <Head>
-                <title>Contact</title>
+                <title>Contact | Abhishek Naik</title>
                 <meta name="description" content="Contact" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>

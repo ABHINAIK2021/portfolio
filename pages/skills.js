@@ -5,7 +5,7 @@ export default function Skills() {
     return (
         <div>
             <Head>
-                <title>Skills</title>
+                <title>Skills | Abhishek Naik</title>
                 <meta name="description" content="Skills" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
