@@ -9,7 +9,7 @@ export default function SkillsPage() {
                     ['Javascript', '90%'],
                     ['Java', '80%'],
                     ['Python', '70%'],
-                    ['C♯', '70%']
+                    ['C#', '70%']
                 ].map(([title, percentage]) => (
                     <div className="flex flex-col gap-1 items-center justify-center" key={title}>
                         <div className="relative pt-1">
