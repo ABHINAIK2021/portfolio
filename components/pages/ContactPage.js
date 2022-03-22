@@ -8,23 +8,23 @@ export default function ContactPage() {
             <div className="md:text-4xl text-2xl text-gray-900 font-bold">Contact Me</div>
             <div className="md:text-2xl text-rose-700 font-bold">get in touch</div>
             <div className="flex md:flex-row flex-col gap-48 items-center justify-between mt-14 sm:overflow-x-hidden">
-                <div className="flex flex-col gap-5 items-start justify-center text-2xl px-5">
+                <div className="flex flex-col gap-5 items-start justify-center px-5">
                     <div className="flex flex-row gap-5 items-center justify-center">
-                        <FaUserAlt size={50} />
+                        <FaUserAlt size={25} />
                         <div className="flex flex-col items-start justify-center">
                             <div className="font-semibold">Name</div>
                             <div className="text-gray-700">Abhishek Naik</div>
                         </div>
                     </div>
                     <div className="flex flex-row gap-5 items-center justify-center">
-                        <ImLocation size={50} />
+                        <ImLocation size={25} />
                         <div className="flex flex-col items-start justify-center">
                             <div className="font-semibold">Address</div>
                             <div className="text-gray-700">Dombivali, Mumbai, India</div>
                         </div>
                     </div>
                     <div className="flex flex-row gap-5 items-center justify-center">
-                        <MdEmail size={50} />
+                        <MdEmail size={25} />
                         <div className="flex flex-col items-start justify-center">
                             <div className="font-semibold">Email</div>
                             <div className="text-gray-700">naikabhi242000@gmail.com</div>
