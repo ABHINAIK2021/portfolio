@@ -1,8 +1,32 @@
 import { FaUserAlt } from 'react-icons/fa'
 import { ImLocation } from 'react-icons/im'
 import { MdEmail } from 'react-icons/md'
+import Link from 'next/link'
+import axios from 'axios'
+import { useState } from 'react'
 
 export default function ContactPage() {
+    const [submitted, setSubmitted] = useState(false);
+
+    const onSubmit = async e => {
+        e.preventDefault();
+
+        let data = {
+            name: e.target.name.value,
+            email: e.target.email.value,
+            subject: e.target.subject.value,
+            message: e.target.message.value
+        };
+
+        await axios.post(`https://abhisheknaik.herokuapp.com/contact/`, data, {
+            headers: { "Content-type": "application/json", },
+        }).then((response) => {
+            setSubmitted(true);
+        }).catch((response) => {
+            setSubmitted(false);
+        });
+    }
+
     return (
         <div className="bg-white mx-auto flex flex-col items-center justify-center min-h-screen py-24 min-w-fit">
             <div className="md:text-4xl text-2xl text-gray-900 font-bold">Contact Me</div>
@@ -32,22 +56,22 @@ export default function ContactPage() {
                     </div>
                 </div>
                 <div className="flex flex-col gap-2 items-center justify-center">
-                    <form>
+                    <form onSubmit={e => onSubmit(e)}>
                         <div className="flex flex-col gap-2 items-center justify-center lg:w-96 w-80">
                             <div className="text-2xl font-semibold mb-3">Message Me</div>
                             <div className="mb-3">
-                                <input type="text" id="name" className="bg-white border border-gray-300 text-gray-900 text-md rounded-lg block lg:w-96 w-80 p-3" placeholder="Name" required />
+                                <input type="text" id="name" name="name" className="bg-white border border-gray-300 text-gray-900 text-md rounded-lg block lg:w-96 w-80 p-3" placeholder="Name" required />
                             </div>
                             <div className="mb-3">
-                                <input type="email" id="email" className="bg-white border border-gray-300 text-gray-900 text-md rounded-lg block lg:w-96 w-80 p-3" placeholder="Email" required />
+                                <input type="email" id="email" name="email" className="bg-white border border-gray-300 text-gray-900 text-md rounded-lg block lg:w-96 w-80 p-3" placeholder="Email" required />
                             </div>
                             <div className="mb-3">
-                                <input type="text" id="subject" className="bg-white border border-gray-300 text-gray-900 text-md rounded-lg block lg:w-96 w-80 p-3" placeholder="Subject" required />
+                                <input type="text" id="subject" name="subject" className="bg-white border border-gray-300 text-gray-900 text-md rounded-lg block lg:w-96 w-80 p-3" placeholder="Subject" required />
                             </div>
                             <div className="mb-3">
-                                <textarea type="textarea" id="message" className="bg-white border border-gray-300 text-gray-900 text-md rounded-lg block lg:w-96 w-80 p-3" placeholder="Message..." required />
+                                <textarea type="textarea" id="message" name="message" className="bg-white border border-gray-300 text-gray-900 text-md rounded-lg block lg:w-96 w-80 p-3" placeholder="Message..." required />
                             </div>
-                            <button type="submit" className="text-2xl text-gray-100 border-2 border-rose-700 rounded-md px-6 py-2 bg-rose-700 hover:bg-transparent hover:text-rose-700">Submit</button>
+                            {submitted ? (<Link href="/"><a className="text-3xl text-gray-100 border-2 border-rose-700 rounded-md px-6 py-2 bg-rose-700 hover:bg-transparent hover:text-rose-700">Back</a></Link>) : (<button type="submit" className="text-2xl text-gray-100 border-2 border-rose-700 rounded-md px-6 py-2 bg-rose-700 hover:bg-transparent hover:text-rose-700">Submit</button>)}
                         </div>
                     </form>
                 </div>
