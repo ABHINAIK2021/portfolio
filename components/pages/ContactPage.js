@@ -31,10 +31,10 @@ export default function ContactPage() {
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-col gap-2 items-start justify-center">
-                    <div className="text-2xl font-semibold">Message Me</div>
-                    <div className="flex flex-col gap-2 items-start justify-center lg:w-96 w-80">
-                        <form>
+                <div className="flex flex-col gap-2 items-center justify-center">
+                    <form>
+                        <div className="flex flex-col gap-2 items-center justify-center lg:w-96 w-80">
+                            <div className="text-2xl font-semibold mb-3">Message Me</div>
                             <div className="mb-3">
                                 <input type="text" id="name" className="bg-white border border-gray-300 text-gray-900 text-md rounded-lg block lg:w-96 w-80 p-3" placeholder="Name" required />
                             </div>
@@ -47,13 +47,11 @@ export default function ContactPage() {
                             <div className="mb-3">
                                 <textarea type="textarea" id="message" className="bg-white border border-gray-300 text-gray-900 text-md rounded-lg block lg:w-96 w-80 p-3" placeholder="Message..." required />
                             </div>
-                            <div className="flex items-center justify-center">
-                                <button type="submit" className="text-2xl text-gray-100 border-2 border-rose-700 rounded-md px-6 py-2 bg-rose-700 hover:bg-transparent hover:text-rose-700">Submit</button>
-                            </div>
-                        </form>
-                    </div>
+                            <button type="submit" className="text-2xl text-gray-100 border-2 border-rose-700 rounded-md px-6 py-2 bg-rose-700 hover:bg-transparent hover:text-rose-700">Submit</button>
+                        </div>
+                    </form>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
