@@ -71,7 +71,7 @@ export default function ContactPage() {
                             <div className="mb-3">
                                 <textarea type="textarea" id="message" name="message" className="bg-white border border-gray-300 text-gray-900 text-md rounded-lg block lg:w-96 w-80 p-3" placeholder="Message..." required />
                             </div>
-                            {submitted ? (<Link href="/"><a className="text-3xl text-gray-100 border-2 border-rose-700 rounded-md px-6 py-2 bg-rose-700 hover:bg-transparent hover:text-rose-700">Back</a></Link>) : (<button type="submit" className="text-2xl text-gray-100 border-2 border-rose-700 rounded-md px-6 py-2 bg-rose-700 hover:bg-transparent hover:text-rose-700">Submit</button>)}
+                            {submitted ? (<Link href="/"><a className="text-3xl text-gray-100 border-2 border-green-700 rounded-md px-6 py-2 bg-green-700 hover:bg-transparent hover:text-green-700">Thank You</a></Link>) : (<button type="submit" className="text-2xl text-gray-100 border-2 border-rose-700 rounded-md px-6 py-2 bg-rose-700 hover:bg-transparent hover:text-rose-700">Submit</button>)}
                         </div>
                     </form>
                 </div>
