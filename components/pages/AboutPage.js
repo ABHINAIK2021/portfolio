@@ -15,7 +15,7 @@ export default function AboutPage() {
                     <div className="font-semibold text-center">I am from Dombivali. I did my graduation in BSC IT from B. N. Bandodkar College of Science, Thane</div>
                     <div className="font-semibold text-center">I have five months of experience as a software developer.</div>
                     <div className="mt-6 text-center">
-                        <Link href="/contact"><a className="text-3xl text-gray-100 border-2 border-rose-700 rounded-md px-6 py-2 bg-rose-700 hover:bg-transparent hover:text-rose-700">Download CV</a></Link>
+                        <Link href="/CV Abhishek Naik.docx"><a className="text-3xl text-gray-100 border-2 border-rose-700 rounded-md px-6 py-2 bg-rose-700 hover:bg-transparent hover:text-rose-700">Download CV</a></Link>
                     </div>
                 </div>
             </div>
