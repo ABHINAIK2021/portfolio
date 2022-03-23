@@ -7,6 +7,7 @@ export default function SkillsPage() {
                 {[
                     ['HTML', '90%'],
                     ['Javascript', '90%'],
+                    ['SQL', '90%'],
                     ['Java', '80%'],
                     ['Python', '70%'],
                     ['C#', '70%']

@@ -31,7 +31,7 @@ export default function ContactPage() {
         <div className="bg-white mx-auto flex flex-col items-center justify-center min-h-screen py-24 min-w-fit">
             <div className="md:text-4xl text-2xl text-gray-900 font-bold">Contact Me</div>
             <div className="md:text-2xl text-rose-700 font-bold">get in touch</div>
-            <div className="flex md:flex-row flex-col gap-48 items-center justify-between mt-14 sm:overflow-x-hidden">
+            <div className="flex md:flex-row flex-col gap-24 items-center justify-between mt-14 sm:overflow-x-hidden">
                 <div className="flex flex-col gap-5 items-start justify-center px-5">
                     <div className="flex flex-row gap-5 items-center justify-center">
                         <FaUserAlt size={25} />
