@@ -8,14 +8,14 @@ export default async (req, res) => {
     port: 587,
     secure: false,
     auth: {
-      user: process.env.user,
-      pass: process.env.pass,
+      user: 'abhishek.naik24082000@gmail.com',
+      pass: 'abhishek@2000',
     },
   });
 
   const result = await transporter.sendMail({
-    from: process.env.user,
-    to: process.env.to,
+    from: 'abhishek.naik24082000@gmail.com',
+    to: 'naikabhi242000@gmail.com',
     subject: subject,
     html: `<p>We mail from Abhishek Naik Portfolio</p><br>
       <p><strong>Name: </strong> ${name} </p><br>

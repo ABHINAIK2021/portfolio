@@ -4,9 +4,11 @@ import { MdEmail } from 'react-icons/md'
 import Link from 'next/link'
 import axios from 'axios'
 import { useState } from 'react'
+import { useRouter } from 'next/router'
 
 export default function ContactPage() {
     const [submitted, setSubmitted] = useState(false);
+    const router = useRouter()
 
     const onSubmit = async e => {
         e.preventDefault();
@@ -18,7 +20,7 @@ export default function ContactPage() {
             message: e.target.message.value
         };
 
-        await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/api/contact`, data, {
+        await axios.post(`${router.basePath}/api/contact`, data, {
             headers: { "Content-type": "application/json", },
         }).then((response) => {
             setSubmitted(true);
