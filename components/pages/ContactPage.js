@@ -18,7 +18,7 @@ export default function ContactPage() {
             message: e.target.message.value
         };
 
-        await axios.post(`https://abhisheknaik.herokuapp.com/contact/`, data, {
+        await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/api/contact`, data, {
             headers: { "Content-type": "application/json", },
         }).then((response) => {
             setSubmitted(true);
