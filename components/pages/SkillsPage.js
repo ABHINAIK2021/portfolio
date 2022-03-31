@@ -27,7 +27,7 @@ export default function SkillsPage() {
                                 </div>
                             </div>
                             <div className="overflow-hidden h-2 mb-4 text-xs flex rounded bg-rose-100 lg:w-96 w-64">
-                                <div style={{ width: percentage }} className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-amber-500"></div>
+                                <div style={{ width: percentage }} className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-rose-700 animate-pulse"></div>
                             </div>
                         </div>
                     </div>

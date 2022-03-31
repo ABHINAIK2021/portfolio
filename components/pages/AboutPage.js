@@ -3,12 +3,12 @@ import Link from 'next/link'
 
 export default function AboutPage() {
     return (
-        <div className="bg-white mx-auto flex flex-col items-center justify-center min-h-screen py-24 min-w-fit">
+        <div className="bg-gray-50 mx-auto flex flex-col items-center justify-center min-h-screen py-24 min-w-fit">
             <div className="md:text-4xl text-2xl text-gray-900 font-bold">About Me</div>
             <div className="md:text-2xl text-amber-500 font-bold">who i am</div>
-            <div className="flex md:flex-row flex-col gap-24 items-center justify-between mt-14 sm:overflow-x-hidden">
+            <div className="flex md:flex-row flex-col gap-10 items-center justify-between mt-10 sm:overflow-x-hidden">
                 <div>
-                    <Image src="/AbhishekNaik.jpg" alt="Abhishek Naik" className="rounded-full" width={400} height={400} />
+                    <Image src="/AbhishekNaik.jpg" alt="Abhishek Naik" className="md:rounded-full rounded-md" width={400} height={400} />
                 </div>
                 <div className="flex flex-col gap-1 items-center justify-center">
                     <div className="text-2xl font-bold text-center">I&apos;m Abhishek Naik and I&apos;m a Developer</div>
