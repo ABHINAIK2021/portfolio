@@ -32,7 +32,7 @@ export default function ContactPage() {
     return (
         <div className="bg-white mx-auto flex flex-col items-center justify-center min-h-screen py-24 min-w-fit">
             <div className="md:text-4xl text-2xl text-gray-900 font-bold">Contact Me</div>
-            <div className="md:text-2xl text-rose-700 font-bold">get in touch</div>
+            <div className="md:text-2xl text-amber-500 font-bold">get in touch</div>
             <div className="flex md:flex-row flex-col gap-24 items-center justify-between mt-14 sm:overflow-x-hidden">
                 <div className="flex flex-col gap-5 items-start justify-center px-5">
                     <div className="flex flex-row gap-5 items-center justify-center">
@@ -73,7 +73,7 @@ export default function ContactPage() {
                             <div className="mb-3">
                                 <textarea type="textarea" id="message" name="message" className="bg-white border border-gray-300 text-gray-900 text-md rounded-lg block lg:w-96 w-80 p-3" placeholder="Message..." required />
                             </div>
-                            {submitted ? (<Link href="/"><a className="text-3xl text-gray-100 border-2 border-green-700 rounded-md px-6 py-2 bg-green-700 hover:bg-transparent hover:text-green-700">Thank You</a></Link>) : (<button type="submit" className="text-2xl text-gray-100 border-2 border-rose-700 rounded-md px-6 py-2 bg-rose-700 hover:bg-transparent hover:text-rose-700">Submit</button>)}
+                            {submitted ? (<Link href="/"><a className="text-3xl text-gray-100 border-2 border-amber-500 rounded-md px-6 py-2 bg-amber-500 hover:bg-transparent hover:text-amber-500">Thank You</a></Link>) : (<button type="submit" className="text-2xl text-gray-100 border-2 border-green-700 rounded-md px-6 py-2 bg-green-700 hover:bg-transparent hover:text-green-700">Submit</button>)}
                         </div>
                     </form>
                 </div>
