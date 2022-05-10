@@ -1,7 +1,7 @@
 export default function SkillsPage() {
     return (
         <div className="bg-gray-900 mx-auto flex flex-col items-center justify-center min-h-screen py-24 min-w-fit">
-            <div className="md:text-4xl text-2xl text-gray-100 font-bold">My skills</div>
+            <div className="md:text-4xl text-2xl text-gray-100 font-bold mt-5">My skills</div>
             <div className="md:text-2xl text-amber-500 font-bold">what i know</div>
             <div className="mt-14 px-10">
                 {[

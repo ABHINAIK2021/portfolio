@@ -4,7 +4,7 @@ import Link from 'next/link'
 export default function AboutPage() {
     return (
         <div className="bg-gray-50 mx-auto flex flex-col items-center justify-center min-h-screen py-24 min-w-fit">
-            <div className="md:text-4xl text-2xl text-gray-900 font-bold">About Me</div>
+            <div className="md:text-4xl text-2xl text-gray-900 font-bold mt-5">About Me</div>
             <div className="md:text-2xl text-amber-500 font-bold">who i am</div>
             <div className="flex md:flex-row flex-col gap-10 items-center justify-between mt-10 sm:overflow-x-hidden">
                 <div>

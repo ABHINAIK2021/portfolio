@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 export default function HomePage() {
     const [text, setText] = useState('Software Developer');
 
-    let data = ['Full Stack Developer', 'UI & UX Designer', 'Frontend Developer', 'Backend Developer', 'Software Implementation Engineer'];
+    let data = ['Full Stack Developer', 'UI & UX Designer', 'Frontend Developer', 'Backend Developer'];
 
     useEffect(() => {
         const interval = setInterval(() => {
