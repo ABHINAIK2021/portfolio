@@ -13,7 +13,6 @@ export default function AboutPage() {
                 <div className="flex flex-col gap-1 items-center justify-center">
                     <div className="text-2xl font-bold text-center">I&apos;m Abhishek Naik and I&apos;m a Developer</div>
                     <div className="font-semibold text-center">I am from Dombivali. I did my graduation in BSC IT from B. N. Bandodkar College of Science, Thane</div>
-                    <div className="font-semibold text-center">I have five months of experience as a software developer.</div>
                     <div className="mt-6 text-center">
                         <Link href="/CV Abhishek Naik.docx"><a className="text-3xl text-gray-100 border-2 border-green-700 rounded-md px-6 py-2 bg-green-700 hover:bg-transparent hover:text-green-700">Download CV</a></Link>
                     </div>
